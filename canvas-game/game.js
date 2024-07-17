@@ -41,8 +41,8 @@ window.addEventListener("keyup", (e) => {
 
 // 移动玩家
 function movePlayer() {
-  if (keys["ArrowLeft"] && player.x > 0) player.x -= player.speed;
-  if (keys["ArrowRight"] && player.x + player.width < canvas.width) player.x += player.speed;
+  if (keys["KeyA"] && player.x > 0) player.x -= player.speed;
+  if (keys["KeyD"] && player.x + player.width < canvas.width) player.x += player.speed;
   if (keys["Space"]) shoot();
 }
 
